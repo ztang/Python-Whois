@@ -4,11 +4,13 @@ A simple whois script written in Python with the support of Flask.
 
 I've tried `whois`, `python-whois` module etc. from pypi, but no one satisfy my requirements. 
 And I found the whois tool from Ubuntu is very useful. So I get 
-whois information from Ubuntu shell. **So only support Ubuntu OS now**
+whois information from Ubuntu shell. 
 
-Now it support all tlds.
+**Only support Ubuntu OS now.**
 
-Visit http://wxapp.me for demo.
+**Support all tlds.**
+
+Visit http://wxapp.me for a demo.
 
 ## Deployment
 
@@ -61,9 +63,11 @@ This tool support two usages:
  - Rebuild with Python.
  - Change the whois lookup method.
  - Support all tlds.
+
 [0.2] - 2015-12-10
  - Rebuild the page with Bootstrap.
  - Fix some problems with domain lookup.
  - Add some common tlds.
+
 [0.1] - 2014-07-19
  - Whois Lookup online.
