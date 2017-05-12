@@ -7,6 +7,13 @@ from flask import url_for
 from flask import redirect
 from flask import request
 from whois_check import get_whois
+import sys
+
+
+# fix the problem of chinese
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 
 app = Flask(__name__)
 
