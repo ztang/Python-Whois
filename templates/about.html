@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>About - Whois Lookup</title>
+
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="{{ url_for('index') }}">PyWhois</a>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('about') }}">About <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="starter-template">
+            <h1>Whois Information</h1>
+        </div>
+
+        This is a domain whois lookup tool written in Python with the help of Flask. I am a domain investor. I check
+        whois information every day. I've tried lots of whois lookup websites and not so satisfied. So I decide to write
+        one myself.<br>
+        I trid <code>whois</code> and <code>python-whois</code> module, but none of them satisfy my requirements. I like
+        the whois tool provided by Ubuntu. So I decide to call <code>whois</code> command from shell and receive the
+        output.
+
+        <h2>Usage</h2>
+        This tool support two usages:
+        <ul>
+            <li>Search whois information directly through home page</li>
+            <li>Get whois information with '/whois/your_domain'</li>
+        </ul>
+
+
+        <h2>Dependency</h2>
+        <ul>
+            <li>Ubuntu 16.04LTS</li>
+            <li>Python 2.7</li>
+            <li>Flask 0.12.1</li>
+            <li>Jinja2 2.9.6</li>
+            <li>Bootstrap v4-alpha</li>
+        </ul>
+
+        <h2>TODO</h2>
+        <ul>
+            <li>Input check.</li>
+            <li>Whois information extract.</li>
+            <li>Error detection.</li>
+            <li>Rewrite the templates.</li>
+        </ul>
+
+        <h2>Contact</h2>
+        <ul>
+            <li>Email: <a href="mailto:mail@ztang.com">mail@ztang.com</a> </li>
+        </ul>
+
+        <h2>Changelog</h2>
+        [0.3] - 2017-05-12
+        <ol>
+            <li>Rebuild with Python.</li>
+            <li>Change the whois lookup method.</li>
+            <li>Support all tlds.</li>
+        </ol>
+
+        [0.2] - 2015-12-10
+        <ol>
+            <li>Rebuild the page with Bootstrap.</li>
+            <li>Fix some problems with domain lookup.</li>
+            <li>Add some common tlds.</li>
+        </ol>
+        [0.1] - 2014-07-19
+        <ol>
+            <li>Whois Lookup online.</li>
+        </ol>
+
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/static/js/jquery-3.1.1.slim.min.js" ></script>
+    <script src="/static/js/tether.min.js" ></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>
