@@ -10,7 +10,7 @@ whois information from Ubuntu shell.
 
 **Support all tlds.**
 
-Visit http://wxapp.me for a demo.
+Visit http://www.pywhois.com for a demo.
 
 ## Deployment
 
