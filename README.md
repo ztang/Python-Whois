@@ -14,6 +14,11 @@ Visit http://wxapp.me for a demo.
 
 ## Deployment
 
+Requirements:
+
+ - Ubuntu >= 16.04LTS
+ - Python 2.7
+
 Install dependency:
 
  - sudo apt install whois
