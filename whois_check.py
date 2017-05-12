@@ -6,8 +6,8 @@ def get_whois(domain_name):
     try:
         whois_info = sp.check_output('whois %s' % domain_name, shell=True)
         return whois_info
-    except sp.CalledProcessError:
-        return 'Domain Input Error'
+    except sp.CalledProcessError, e:
+        return e.output
 
 
 if __name__ == '__main__':
