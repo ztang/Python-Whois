@@ -32,13 +32,13 @@ def whois_check():
     domain_name = request.form['domain_name']
     dn_info_str = get_whois(domain_name)
     dn_info = dn_info_str.replace('\n', '<br>')
-    return render_template('whois_info.html', dn_info=dn_info)
+    return render_template('whois_info.html', dn_info=dn_info, dn_value=domain_name)
 
 @app.route('/whois/<domain_name>')
 def whois_info(domain_name):
     dn_info_str = get_whois(domain_name)
     dn_info = dn_info_str.replace('\n', '<br>')
-    return render_template('whois_info.html', dn_info=dn_info)
+    return render_template('whois_info.html', dn_info=dn_info, dn_value=domain_name)
 
 
 if __name__ == '__main__':
