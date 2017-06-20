@@ -23,7 +23,7 @@ Install dependency:
 
  - sudo apt install whois
  - pip install flask
- 
+
 Install a web server. You can choose apache, nginx or whatever you like.
 
 Configura the web server.
@@ -50,20 +50,18 @@ Here is my example conf file for apache server:
 This tool support two usages:
  - Search whois information directly through home page
  - Get whois information with '/whois/your_domain'
- 
+
  ## TODO
- 
- - Input check.
+
  - Whois information extract.
- - Error detection.
  - Rewrite the templates.
- 
+
  ## Contact
- 
+
  Email: mail@ztang.com
- 
+
  ## Changelog
- 
+
 [0.3] - 2017-05-12
  - Rebuild with Python.
  - Change the whois lookup method.
