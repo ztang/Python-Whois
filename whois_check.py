@@ -6,7 +6,7 @@ import re
 def get_whois(domain_name):
     try:
         domain_name_match = re.match(r'[a-zA-Z0-9][-a-zA-Z0-9]{0,62}\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62}', domain_name)
-        domain_name_match_long = re.match(r'[a-zA-Z0-9][-a-zA-Z0-9]{0,4}\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62}\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62}', domain_name)
+        domain_name_match_long = re.match(r'[a-zA-Z0-9][-a-zA-Z0-9]{0,62}\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62}\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62}', domain_name)
         if domain_name_match == None:
             return 'Input Error \n Please input correct domain name!'
         else:
