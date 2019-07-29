@@ -13,7 +13,7 @@ def get_whois(domain_name):
             if domain_name_match_long == None:
                 domain_name = domain_name_match.group()
             else:
-                dnw = domain_name_match_long.group()
+                domain_name = domain_name_match_long.group()
                 # domain_name = dnw.split('.')[1]+ '.' + dnw.split('.')[2]
             whois_info = sp.check_output('whois %s' % domain_name, shell=True)
             return whois_info

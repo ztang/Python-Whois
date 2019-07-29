@@ -62,6 +62,9 @@ This tool support two usages:
 
  ## Changelog
 
+[0.4] - 2019-07-30
+ - Fix bugs
+
 [0.3] - 2017-05-12
  - Rebuild with Python.
  - Change the whois lookup method.
