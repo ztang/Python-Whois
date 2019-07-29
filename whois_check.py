@@ -6,15 +6,15 @@ import re
 def get_whois(domain_name):
     try:
         domain_name_match = re.match(r'[a-zA-Z0-9][-a-zA-Z0-9]{0,62}\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62}', domain_name)
-        domain_name_match_www = re.match(r'[a-zA-Z0-9][-a-zA-Z0-9]{0,4}\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62}\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62}', domain_name)
+        domain_name_match_long = re.match(r'[a-zA-Z0-9][-a-zA-Z0-9]{0,4}\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62}\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62}', domain_name)
         if domain_name_match == None:
             return 'Input Error \n Please input correct domain name!'
         else:
-            if domain_name_match_www == None:
+            if domain_name_match_long == None:
                 domain_name = domain_name_match.group()
             else:
-                dnw = domain_name_match_www.group()
-                domain_name = dnw.split('.')[1]+ '.' + dnw.split('.')[2]
+                dnw = domain_name_match_long.group()
+                # domain_name = dnw.split('.')[1]+ '.' + dnw.split('.')[2]
             whois_info = sp.check_output('whois %s' % domain_name, shell=True)
             return whois_info
     except sp.CalledProcessError as e:
