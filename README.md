@@ -54,10 +54,6 @@ This tool support two usages:
  - Whois information extract.
  - Rewrite the templates.
 
- ## Contact
-
- Email: mail@ztang.com
-
  ## Changelog
 
 [0.4] - 2019-07-30
