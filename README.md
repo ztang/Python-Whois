@@ -10,8 +10,6 @@ whois information from Ubuntu shell.
 
 **Support all tlds.**
 
-Visit http://www.pywhois.com for a demo.
-
 ## Deployment
 
 Requirements:
